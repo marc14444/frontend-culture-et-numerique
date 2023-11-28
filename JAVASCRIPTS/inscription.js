@@ -18,7 +18,7 @@ formulaire.addEventListener('submit', event=>{
     formData.append("motDePasse", motDePasse.value);
     formData.append("confirmeMotDePasse", confirmeMotDePasse.value);
 
-    fetch('http://localhost:3000/api/user',{
+    fetch('https://travelx-0le0.onrender.com/api/user/',{
         method:"POST",
         body: new URLSearchParams(formData)
     }).then(res => res.json())
