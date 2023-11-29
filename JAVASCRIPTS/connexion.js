@@ -1,5 +1,5 @@
 
-const formulaire = document.querySelector('form');
+let formulaire = document.querySelector('form');
 
 formulaire.addEventListener('submit', event=>{
     event.preventDefault()
@@ -11,6 +11,7 @@ formulaire.addEventListener('submit', event=>{
 
     formData.append("email", email.value);
     formData.append("motDePasse", motDePasse.value);
+    console.log(email);
 
     fetch('https://travelx-0le0.onrender.com/api/user/login/',{
         method:"POST",
