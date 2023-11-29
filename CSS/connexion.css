@@ -81,7 +81,7 @@ form button {
     width: 100%;
     padding: 16px 0;
     font-size: 1rem;
-    background: #e50914;
+    background: rgb(0, 130, 230);
     color: #fff;
     font-weight: 500;
     border-radius: 4px;
@@ -92,7 +92,7 @@ form button {
     transition: 0.1s ease;
 }
 form button:hover{
-    background: #c40812;
+    background: rgb(0, 130, 230);
 }
 .form-wrapper a{
     text-decoration: none;
