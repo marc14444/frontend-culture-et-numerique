@@ -12,5 +12,5 @@ let deconnexion = document.querySelector('.deconnexion');
 deconnexion.addEventListener('click', (e)=>{
     e.preventDefault();
     localStorage.removeItem('session');
-    window.location.href = './../index.html'
+    window.location.href = '/index.html'
 });
