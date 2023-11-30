@@ -20,16 +20,21 @@ formulaire.addEventListener('submit', event=>{
     .then(succes =>{
         if(succes.statut == true ){
 
-
           let message = document.querySelector('.messagesDeConnexion');
             message.textContent ='connexion reuissi !';
             message.style.color = 'green';
             message.style.fontSize = "1.5rem";
+            localStorage.setItem('session',JSON.stringify(succes.formData));
             setTimeout(window.location.href = './connecter.html',5000);
         }else{
             message.textContent ='email ou mot de passe incorrecte!';
             message.style.color = 'red';
             message.style.fontSize = "1rem";
         }
-    }) 
+    })
 });
+
+const sessions = localStorage.session;
+if(sessions !== null){
+    window.location.href = './connecter.html';
+}
