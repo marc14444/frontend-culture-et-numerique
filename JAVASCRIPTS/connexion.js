@@ -25,7 +25,7 @@ formulaire.addEventListener('submit', event=>{
             message.textContent ='connexion reuissi !';
             message.style.color = 'green';
             message.style.fontSize = "1.5rem";
-            localStorage.setItem('session',JSON.stringify(succes.formData));
+            localStorage.setItem('session', JSON.stringify(succes.formData));
             setTimeout(window.location.href = './connecter.html',5000);
         }else{
             message.textContent ='email ou mot de passe incorrecte!';
