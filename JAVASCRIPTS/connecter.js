@@ -1,14 +1,9 @@
-const session = JSON.parse(localStorage.getItem('session'));
-
-//const objet = JSON.parse(session)
-
+const session = localStorage.getItem('session');
 
 let nom = document.querySelector('.afficherNom');
 
 if(session === null){
     window.location.href = './connexion.html'
-    nom.innerHTML = session.email
-    console.log(nom);
 }
 let deconnexion = document.querySelector('.deconnexion');
 deconnexion.addEventListener('click', (e)=>{
