@@ -33,8 +33,3 @@ formulaire.addEventListener('submit', event=>{
         }
     })
 });
-
-const sessions = localStorage.session;
-if(sessions !== null){
-    window.location.href = './connecter.html';
-}
