@@ -1,5 +1,6 @@
 
 let formulaire = document.querySelector('form');
+let message = document.querySelector('.messagesDeConnexion');
 
 formulaire.addEventListener('submit', event=>{
     event.preventDefault()
@@ -20,7 +21,7 @@ formulaire.addEventListener('submit', event=>{
     .then(succes =>{
         if(succes.statut == true ){
 
-          let message = document.querySelector('.messagesDeConnexion');
+          
             message.textContent ='connexion reuissi !';
             message.style.color = 'green';
             message.style.fontSize = "1.5rem";
