@@ -1,6 +1,7 @@
 const session = localStorage.getItem('session');
 
 let nom = document.querySelector('.afficherNom');
+nom.innerHTML = `bonjour et bienvenue`
 
 if(session === null){
     window.location.href = './connexion.html'
